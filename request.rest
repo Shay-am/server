@@ -1,0 +1,31 @@
+POST http://localhost:2000/login HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test1",
+    "password": "test1"
+}
+
+###
+
+Get http://localhost:2000/verifyToken HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM2ZmM2NjljN2NkNmY4OWJjNWMyNWEiLCJuYW1lIjoidGVzdDEiLCJpYXQiOjE2NDA1MjgzMDIsImV4cCI6MTY0MDUyODMzMn0.pqaHE7sP2HqJO1OIywQbudObkcCb5yvXIma5f7Lwj20
+
+###
+
+POST http://localhost:2000/addBeer HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM2ZmM2NjljN2NkNmY4OWJjNWMyNWEiLCJuYW1lIjoidGVzdDEiLCJpYXQiOjE2NDA1NDU1NjMsImV4cCI6MTY0MDU0ODU2M30.p6jtMuEtRJnx-eulOQRcsxf_zdGtFOhRmKRlhxolvM0
+
+{
+    "name": "beer12",
+    "image_url": "image12",
+    "tagline": "tagline12",
+    "ingredients": "skladniki"
+}
+
+
+####
+Get http://localhost:2000/getBeers HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM2ZmM2NjljN2NkNmY4OWJjNWMyNWEiLCJuYW1lIjoidGVzdDEiLCJpYXQiOjE2NDA1MzgyMDcsImV4cCI6MTY0MDU0MTIwN30.exR6sw__Vu1SajNId0-42XMoG6hfpxeVQ0s17mcBi9Q
