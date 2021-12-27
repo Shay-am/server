@@ -26,6 +26,7 @@ export const getBeers = async (req, res, next) => {
 		const beers = await beerModel.find({ user_id: req.user._id }).exec();
 
 		res.status(200).json({ data: beers, messeage: "Succes" });
+
 		return next();
 	} catch (error) {
 		res

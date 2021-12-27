@@ -3,7 +3,7 @@ const app = express();
 
 import { register } from "../Controlles/registerControllers.js";
 import { login } from "../Controlles/loginControlles.js";
-import { authenticate } from "../Mddleware/Authenticate.js";
+import { authenticate } from "../Middleware/Authenticate.js";
 import { addBeer, getBeers } from "../Controlles/beerControllers.js";
 import { sendEmail } from "../Controlles/sendEmailControllers.js";
 
