@@ -15,7 +15,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM2ZmM2N
 
 POST http://localhost:2000/addBeer HTTP/1.1
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM2ZmM2NjljN2NkNmY4OWJjNWMyNWEiLCJuYW1lIjoidGVzdDEiLCJpYXQiOjE2NDA1NDU1NjMsImV4cCI6MTY0MDU0ODU2M30.p6jtMuEtRJnx-eulOQRcsxf_zdGtFOhRmKRlhxolvM0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM2ZmM2NjljN2NkNmY4OWJjNWMyNWEiLCJuYW1lIjoidGVzdDEiLCJpYXQiOjE2NDA1NDkzNjUsImV4cCI6MTY0MDU1MjM2NX0.eE6l-9RtKbGRdOx-T2nr8xCj4LjYg3fe5k7UQVA6Pq0
 
 {
     "name": "beer12",
@@ -29,3 +29,13 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM2ZmM2N
 Get http://localhost:2000/getBeers HTTP/1.1
 content-type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM2ZmM2NjljN2NkNmY4OWJjNWMyNWEiLCJuYW1lIjoidGVzdDEiLCJpYXQiOjE2NDA1MzgyMDcsImV4cCI6MTY0MDU0MTIwN30.exR6sw__Vu1SajNId0-42XMoG6hfpxeVQ0s17mcBi9Q
+
+####
+
+POST http://localhost:2000/sendEmail HTTP/1.1
+content-type: application/json
+
+{    
+    "data": [{"number": "1", "name": "piwo"}, {"number": "2", "name": "piwo2"}],
+    "email": "mateuszbogacz94@gmail.com"
+}
