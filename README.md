@@ -1,4 +1,4 @@
-# Server
+# Server /ApiBeers
 
 FullStack App
 
