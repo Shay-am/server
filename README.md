@@ -21,7 +21,7 @@ You need to install [node.js](https://nodejs.org/en/download/)
 Clone the repository using a terminal
 
 ```bash
-https://github.com/Shay-am/server.git
+git clone https://github.com/Shay-am/server.git
 ```
 Install all dependencies
 
