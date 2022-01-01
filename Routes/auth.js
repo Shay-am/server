@@ -1,11 +1,11 @@
 import express from "express";
 const app = express();
 
-import { register } from "../Controlles/registerControllers.js";
-import { login } from "../Controlles/loginControlles.js";
+import { register } from "../Controlles/register.controllers.js";
+import { login } from "../Controlles/login.controlles.js";
 import { authenticate } from "../Middleware/Authenticate.js";
-import { addBeer, getBeers } from "../Controlles/beerControllers.js";
-import { sendEmail } from "../Controlles/sendEmailControllers.js";
+import { addBeer, getBeers } from "../Controlles/beer.controllers.js";
+import { sendEmail } from "../Controlles/sendEmail.controllers.js";
 
 app.get("/verifyToken", authenticate);
 app.post("/register", register);

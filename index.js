@@ -5,11 +5,13 @@ const app = express();
 import db from "./database/mongoose.js";
 import cors from "cors";
 import bodyParser from "body-parser";
+import cookieParser from "cookie-parser";
 import routers from "./Routes/auth.js";
 
 const PORT = process.env.PORT;
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cookieParser());
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
